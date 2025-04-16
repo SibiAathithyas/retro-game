@@ -1,0 +1,282 @@
+body {
+    font-family: 'Press Start 2P', monospace; /* Example pixel font */
+    background-color: #181818;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #282828;
+    border: 4px solid #555;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #333;
+    width: 90%;
+    max-width: 960px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #555;
+    margin-bottom: 20px;
+}
+
+.site-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    image-rendering: pixelated;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 2px solid #555;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+    image-rendering: pixelated;
+}
+
+.nav-button:hover, .nav-button.active-nav {
+    background-color: #555;
+}
+
+.content {
+    padding: 20px 0;
+}
+
+.page {
+    display: none; /* Initially hide all pages */
+}
+
+.page.active {
+    display: block; /* Show the active page */
+}
+
+.hero-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.updates {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 2px solid #444;
+}
+
+.updates h2 {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.update-item {
+    padding: 5px 0;
+    border-bottom: 1px dashed #444;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.featured-challenges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.challenge-card {
+    background-color: #333;
+    border: 2px solid #444;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+}
+
+.challenge-card img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    image-rendering: pixelated;
+}
+
+.challenge-card h3 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.challenge-card p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.small-button {
+    background-color: #555;
+    color: #f0f0f0;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.2s ease;
+    image-rendering: pixelated;
+}
+
+.small-button:hover {
+    background-color: #666;
+}
+
+.leaderboard-page ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leaderboard-item {
+    background-color: #333;
+    border-bottom: 1px dashed #444;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+}
+
+.collectible-item {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.collectible-item img {
+    max-width: 64px;
+    height: auto;
+    image-rendering: pixelated;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-size: 0.7em;
+}
+
+#item-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.rules-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.rules-list li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #444;
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.large-avatar {
+    width: 64px;
+    height: 64px;
+    margin-right: 15px;
+    image-rendering: pixelated;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.badge-collection {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.badge {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #777;
+    font-size: 0.8em;
+}
+
+/* Add your pixel font import here (e.g., from Google Fonts or a local file) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.pixel-font {
+    font-family: 'Press Start 2P', monospace;
+}
+
+.pixel-art {
+    image-rendering: pixelated; /* For crisp pixel art */
+}

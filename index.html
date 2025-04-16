@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Hackathon Platform UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pixel-font.css"> </head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="site-title pixel-font">HACKATHON '85</h1>
+            <div class="user-info">
+                <img src="assets/avatar.png" alt="User Avatar" class="pixel-art avatar">
+                <span class="pixel-font">Guest User</span>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <button class="nav-button pixel-font active-nav" data-target="homepage">HACK NOW</button>
+            <button class="nav-button pixel-font" data-target="leaderboard-page">LEADERBOARD</button>
+            <button class="nav-button pixel-font" data-target="collection-page">COLLECTION</button>
+            <button class="nav-button pixel-font" data-target="rules-page">RULES</button>
+            <button class="nav-button pixel-font" data-target="profile-page">PROFILE</button>
+        </nav>
+
+        <main class="content">
+            <section id="homepage" class="page active">
+                <div class="hero-image pixel-art">
+                    <img src="assets/hackathon_town.png" alt="Hackathon Town">
+                </div>
+                <div class="updates">
+                    <h2 class="pixel-font">LATEST UPDATES</h2>
+                    <div class="update-item pixel-font">New challenge: Pixel Puzzle released!</div>
+                    <div class="update-item pixel-font">Leaderboard updated. Check your rank!</div>
+                </div>
+                <div class="featured-challenges">
+                    <h2 class="pixel-font">FEATURED CHALLENGES</h2>
+                    <div class="challenge-card pixel-art">
+                        <img src="assets/challenge_icon_1.png" alt="Challenge 1">
+                        <h3 class="pixel-font">Code Quest</h3>
+                        <p class="pixel-font">Solve the ancient algorithm.</p>
+                        <button class="small-button pixel-font">ENTER</button>
+                    </div>
+                    <div class="challenge-card pixel-art">
+                        <img src="assets/challenge_icon_2.png" alt="Challenge 2">
+                        <h3 class="pixel-font">Pixel Painter</h3>
+                        <p class="pixel-font">Create a retro masterpiece.</p>
+                        <button class="small-button pixel-font">ENTER</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="leaderboard-page" class="page">
+                <h2 class="pixel-font">LEADERBOARD</h2>
+                <ol class="leaderboard-list">
+                    <li class="leaderboard-item pixel-font">1. Pixel Pioneers - 1200</li>
+                    <li class="leaderboard-item pixel-font">2. Code Crusaders - 1150</li>
+                    <li class="leaderboard-item pixel-font">3. Byte Bandits - 1080</li>
+                    <li class="leaderboard-item pixel-font">4. Logic Leapers - 1050</li>
+                    <li class="leaderboard-item pixel-font">5. Syntax Saviors - 1000</li>
+                </ol>
+            </section>
+
+            <section id="collection-page" class="page">
+                <h2 class="pixel-font">YOUR COLLECTION</h2>
+                <div class="collection-grid">
+                    <div class="collectible-item pixel-art" data-name="Bronze Badge" data-description="Awarded for participation.">
+                        <img src="assets/badge_bronze.png" alt="Bronze Badge">
+                        <span class="item-name pixel-font">Bronze Badge</span>
+                    </div>
+                    <div class="collectible-item pixel-art" data-name="Pixel Sword" data-description="A legendary pixel weapon.">
+                        <img src="assets/item_sword.png" alt="Pixel Sword">
+                        <span class="item-name pixel-font">Pixel Sword</span>
+                    </div>
+                    <div class="collectible-item pixel-art" data-name="Golden Cog" data-description="For solving a hard challenge.">
+                        <img src="assets/item_cog_gold.png" alt="Golden Cog">
+                        <span class="item-name pixel-font">Golden Cog</span>
+                    </div>
+                    <div class="collectible-item pixel-art" data-name="Retro Console" data-description="A rare find!">
+                        <img src="assets/item_console.png" alt="Retro Console">
+                        <span class="item-name pixel-font">Retro Console</span>
+                    </div>
+                </div>
+                <div id="item-details" class="pixel-font" style="display: none;"></div>
+            </section>
+
+            <section id="rules-page" class="page">
+                <h2 class="pixel-font">HACKATHON RULES</h2>
+                <ul class="rules-list pixel-font">
+                    <li>All submissions must be original work.</li>
+                    <li>Teams can consist of up to 4 members.</li>
+                    <li>The submission deadline is [Date and Time].</li>
+                    <li>Use of external libraries is permitted unless specified otherwise.</li>
+                    <li>Have fun and be creative!</li>
+                </ul>
+            </section>
+
+            <section id="profile-page" class="page">
+                <h2 class="pixel-font">YOUR PROFILE</h2>
+                <div class="profile-info">
+                    <img src="assets/avatar_custom.png" alt="Custom Avatar" class="pixel-art large-avatar">
+                    <div class="profile-details">
+                        <p class="pixel-font"><strong>Username:</strong> PixelMaster82</p>
+                        <p class="pixel-font"><strong>Team:</strong> The Byte Knights</p>
+                        <p class="pixel-font"><strong>Bio:</strong> Retro enthusiast and code wizard.</p>
+                    </div>
+                </div>
+                <h3 class="pixel-font">COLLECTED BADGES</h3>
+                <div class="badge-collection">
+                    <img src="assets/badge_participation.png" alt="Participation Badge" class="pixel-art badge">
+                    <img src="assets/badge_coder.png" alt="Coder Badge" class="pixel-art badge">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="pixel-font">&copy; 2025 Retro Hackathon</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
