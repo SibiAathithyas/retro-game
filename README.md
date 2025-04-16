@@ -1,5 +1,4 @@
-﻿# retro-game
-# Retro Hackathon Platform UI
+# Retro Game Platform UI
 
 This project is a frontend UI concept for a retro-themed hackathon platform, designed with pixel art aesthetics and a nostalgic 1980s vibe. It was created for the Frontend UI Hackathon 2025.
 
@@ -21,9 +20,26 @@ The UI is built using HTML, CSS (with a custom pixel font and styling), and basi
 * CSS3
 * JavaScript
 * Pixel Art Assets (located in the `assets/` folder)
-* [Optional: Mention the pixel font source if you used a CDN or local file]
 
 ## Project Structure
+
+Retro-game/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── avatar.png
+│   ├── hackathon_town.png
+│   ├── challenge_icon_1.png
+│   ├── challenge_icon_2.png
+│   ├── badge_bronze.png
+│   ├── item_sword.png
+│   ├── item_cog_gold.png
+│   ├── item_console.png
+│   ├── avatar_custom.png
+│   ├── badge_participation.png
+│   └── badge_coder.png
+└── README.md
 
 ## Live Demo
 
@@ -31,7 +47,7 @@ http://symphonious-sunshine-8b91a5.netlify.app/
 
 ## How to Run Locally (for development/testing)
 
-1.  Clone this repository to your local machine:
+1.  Clone this repository to your local machine:https://github.com/SibiAathithyas/retro-game.git
     ```bash
     git clone 
     ```
