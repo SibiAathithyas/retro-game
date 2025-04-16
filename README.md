@@ -65,7 +65,7 @@ http://symphonious-sunshine-8b91a5.netlify.app/
 * Interactive collection items with detail display on click.
 * Basic profile and rules pages.
 
-## Future Enhancements (Optional)
+## Future Enhancements:
 
 * More advanced JavaScript for dynamic content loading.
 * Integration with a backend (if this were a full-stack project).
@@ -74,4 +74,4 @@ http://symphonious-sunshine-8b91a5.netlify.app/
 
 ## Credits
 
-* UI Design and Implementation: Sibi Aathithyaa
+* UI Design and Implementation: SibiAathithyas
